@@ -16,7 +16,7 @@ $alphabets = gen_alphabet();
         <p>Explore and find names</p>
         <nav>
             <?php foreach ($alphabets as $alphabet) : ?>
-                <a href="index.php?<?php echo http_build_query(['letter' => $alphabet]) ?>"><?php echo e($alphabet)?></a>
+                <a href="letter.php?<?php echo http_build_query(['letter' => $alphabet]) ?>"><?php echo e($alphabet)?></a>
             <?php endforeach;?>
         </nav>
     </header>
