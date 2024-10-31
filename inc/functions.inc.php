@@ -11,6 +11,7 @@ function render($view, $params) {
     require __DIR__. '/../views/pages/' . $view . '.php';
     $contents = ob_get_clean();
 
+    $alphabets = gen_alphabet();
     require __DIR__. '/../views/layout/main.view.php';
 }
 

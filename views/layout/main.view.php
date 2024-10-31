@@ -1,7 +1,3 @@
-<?php
-$alphabets = gen_alphabet();
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +15,7 @@ $alphabets = gen_alphabet();
         <p>Explore and find names</p>
         <nav>
             <?php foreach ($alphabets as $alphabet) : ?>
-                <a href="letter.php?<?php echo http_build_query(['letter' => $alphabet]) ?>"><?php echo e($alphabet) ?></a>
+                <a style="background-color: <?php if(!empty($letter) && $alphabet === $letter) echo 'yellowgreen' ?>;" href="letter.php?<?php echo http_build_query(['letter' => $alphabet]) ?>"><?php echo e($alphabet) ?></a>
             <?php endforeach; ?>
         </nav>
     </header>

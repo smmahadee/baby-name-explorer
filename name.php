@@ -17,5 +17,6 @@ $specificName = fetch_by_name($name);
 
 render('name.view', [
     'name' => $name,
+    'letter' => $name[0],
     'specificName' => $specificName
 ]);
