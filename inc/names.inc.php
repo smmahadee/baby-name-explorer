@@ -36,7 +36,7 @@ function fetch_by_name(string $name) : array {
    $stmt = $pdo->prepare('SELECT name, SUM(count) as total_count from names 
    GROUP BY name
    ORDER by total_count DESC
-   limit 10');
+   limit 15');
    $stmt->execute();
 
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
