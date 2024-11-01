@@ -1,0 +1,25 @@
+.pagination_btn {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    border: 1px solid greenyellow;
+    text-decoration: none;
+}
+
+.pagination_btn:hover {
+    background-color: green;
+}
+
+.pagination_btn.active {
+    background-color: greenyellow;
+    color: white;
+}
+
+.pagination_box {
+    display: flex ;
+    gap: 10px;
+    align-items: center;
+}
